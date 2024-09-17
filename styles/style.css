@@ -1,0 +1,368 @@
+/*-----------------ESTILOS GENERALES----------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(75, 70, 85);
+    
+    /* Fonts del body */
+    font-family: "Poppins", sans-serif;
+    font-weight: 200; 
+    font-style: normal;
+}
+h1 {
+    text-align: center;
+    color: rgb(179, 149, 239);
+    font-size: 2.5rem;
+}
+h2, h3 {
+    text-align: left;
+    /* background-color: rgb(44, 45, 45); */
+    color: rgb(179, 149, 239);
+    font-size: 1.3rem;
+    /* Fonts de los h2*/
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style:normal;
+}
+p {
+    color: white;
+}
+button {
+    color: rgb(179, 149, 239);
+    background-color: rgb(44, 45, 45);
+    /* Fonts de los botones*/
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a {
+    color: rgb(179, 149, 239);
+    text-decoration: none;    /*quita subrrayado*/
+}
+
+/*-------------------ESTILOS DEL HEADER-----------------*/
+
+.header { 
+    width: 100%;
+    height: 21vh;
+    background-image: url('/images/fondo.png');
+    background-size: cover; /* Hace que la imagen cubra todo el área de la sección */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: white; /* Cambia el color del texto a blanco para contraste */
+    font-weight: 400;
+    
+    text-align: center; 
+
+    border: solid 1px white;
+    margin: 2px;
+}
+.titulo {
+    width: 100%;
+    height: 6vh;
+    text-align: center;
+}
+.login-carrito{
+    display: flex;
+    align-items:flex-end;
+    flex-direction: column;
+    height: 7vh;
+}
+.login-carrito button {
+    width: 20%;
+    height: 3vh;
+}
+.login-carrito button:active {
+    color: rgb(132, 0, 255);
+}
+.login-carrito button:hover{
+    border: solid 1px rgb(132, 0, 255);
+}
+
+
+.nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(44, 45, 45);
+    overflow: hidden;   
+}
+.nav ul {
+    width: 100%;
+    margin: 2px;
+    padding: 0;
+    display: flex; 
+    justify-content:space-around;
+    list-style-type: none;
+    /* Fonts del nav */
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.nav li {
+    float: left;
+    border: solid 1px rgb(132, 0, 255);
+    background-color: rgb(213, 194, 239);
+    padding: 5px;
+    margin: 3px;
+    width: 100%;
+    height: 5vh;
+}
+.nav a{
+    display: block;
+    text-align: center;
+    
+}
+.nav li:hover {
+    background-color: rgb(75, 70, 85);
+}
+
+/*--------------ESTILOS DE SECCION CAROUSEL---------------*/
+
+.carousel {
+    width: 60%;
+    height: 60vh;
+    text-align: center;
+    align-content: center;
+
+    border: solid 1px white;
+    margin: 2px;
+}
+
+/*-------------ESTILOS DEL MAIN CATEGORIAS--------------*/
+
+.categorias {
+    list-style-type: none;
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px black;
+    text-align: center;
+
+    border: solid 1px white;
+    margin: 2px;
+}
+.categorias article {
+    margin: 5px;
+    width: 100%;
+}
+.categorias img {
+    width: 100%;
+    height: 90%    
+}
+.categorias a:hover {
+    color: rgb(132, 0, 255);
+}
+.categorias a:active {
+    color: rgb(132, 0, 255);
+}
+
+/*-------------ESTILOS DE SECCION INDUMENTARIA------------*/
+
+.indumentaria {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a una nueva fila */
+    overflow: hidden; /* Evita que el contenido se desborde */;
+    justify-content: space-between;
+
+    border: solid 1px white;
+    margin: 2px;
+    padding: 2vh;
+    
+}
+
+/*-------------ESTILOS DE SECCION NUEVOS INGRESOS---------*/
+
+.ingresos {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+    overflow: hidden; /* Evita que el contenido se desborde */
+    justify-content: space-between;
+    
+
+    border: solid 1px white;
+    margin: 2px;
+    padding: 2vh;
+}
+
+/*---------------ESTILOS DE ASIDE SERVICIOS---------------*/
+
+.servicios {
+    width: 100%;
+    height: 25vh;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    border: solid 1px white;
+    margin: 2px;
+}
+.servicios a:active {
+    color: rgb(132, 0, 255);
+}
+.servicios a:hover {
+    color: rgb(132, 0, 255);
+
+}
+
+/*-------------------ESTILOS DEL FOOTER-------------------*/
+
+.footer{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(44, 45, 45);
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    display: flex; 
+    justify-content: space-around;
+
+
+    /* Fonts del footer */
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    border: solid 1px white;
+    margin: 2px;
+}
+.footer a{
+    width: 100%;
+    height: 4vh;
+    text-align: center;
+}
+.footer a:active {
+    color: rgb(132, 0, 255);
+}
+.footer a:hover{
+    border: solid 1px rgb(132, 0, 255);
+}
+
+/* ESTILOS CARDS DE PRODUCTOS NUEVOS INGRESOS, CATALOGO Y OUTLET */
+
+.card-body {
+    
+}
+.card-body button {
+    width: 50%;
+}
+
+
+.cards {
+    border: solid 1px black;
+    width: 50%;
+    height: 23vh;
+    margin: 0vh;
+    padding: 1vh;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    
+}
+.cards article {}
+
+.cards img {
+    width: 90%;
+    height: 10vh;
+}
+
+/*-----------------------FIN ESTILOS INDEX.HTML----------------------------*/
+/*-----------------------FIN ESTILOS INDEX.HTML----------------------------*/
+
+/* ESTILOS MAIN NOSOTROS */
+
+.nosotros img {
+    width: 100%;
+    height: 400px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.nosotros p {
+    text-align: center;
+}
+
+/* ESTILOS MAIN COLECCION */
+
+.contenedor-coleccion h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* ESTILOS MAIN CONTACTO MAYORISTA */
+
+.contacto-mayorista{
+    background-image: url(/images/contacto-mayorista.jpg);
+    display: flex;
+    justify-content:center
+}
+.formulario {
+    width: 350px;
+    height: 250px;
+    border: 2px solid rgb(179, 149, 239);
+    margin: 25px;
+    padding: 10px;
+    background-color: rgb(213, 194, 239);
+}
+
+/* ESTILOS MDPSTORE */
+.contenedor-mdpstore {
+    width: 100%;
+    height: 400px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.datos-mdpstore h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+.datos-mdpstore p {
+    color: white;
+}
+.mapa-mdpstore {
+    width: 50%;
+    
+    
+}
+
+/* ESTILOS OUTLET */
+
+.contenedor-outlet h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+

@@ -7,25 +7,26 @@
     <title>ShoesCity / Outlet</title>
 </head>
 <body>
-    <header class="header">
-        <div class="grid-container-header">
+    <div class="container-fluid">
 
-            <!-- SECCION DE LOGO EMPRESA Y BUSCADOR --> 
-            <div class="titulo">              
-                <h1>ShoesCity</h1>
-                <p>Urban design and running </p>
-                <!-- Falta logica del boton buscador -->
-            </div> 
-
-            <!-- SECCION DE LOGIN Y CARRITO DE COMPRAS -->
-            <div class="login-carrito">
-                <button type="submit"><a href="">LOGIN</a></button>
-                <button type="submit"><a href="">CARRITO</a></button>
-            </div>
+        <!-- SECCION DEL HEADER -->
+        <div class="row">
+            <header class="header">
+                <!-- SECCION DE LOGO EMPRESA Y BUSCADOR --> 
+                <div class="titulo">              
+                    <h1>ShoesCity</h1>
+                    <p>Urban design and running </p>
+                </div> 
         
-            <!-- SECCION DE NAVEGADOR -->
-            <div class="nav">
-                <nav class="">
+                <!-- SECCION DE LOGIN Y CARRITO DE COMPRAS -->
+                <div class="login-carrito">
+                    <button type="submit"><a href="">LOGIN</a></button>
+                    <button type="submit"><a href="">CARRITO</a></button>
+                </div>
+                
+                <!-- SECCION DE NAVEGADOR -->
+                    
+                <nav class="nav">
                     <ul>
                         <li><a href="../index.html">Inicio/Principal</a></li>
                         <li><a href="nosotros.html">Nosotros ShoesCity</a></li>
@@ -34,58 +35,107 @@
                         <li><a href="mdpStore.html">MDP Store</a></li>
                         <li><a href="outlet.html">Outlet</a></li>
                     </ul>
-                </nav>
-            </div>
+                </nav>      
+            </header>
+        </div>
 
-        </div>    
-    </header>
-
-    <main>
-        <section class="contenedor-outlet">
-            <h2>Productos seleccionados hasta un 50% OFF...</h2>
-        </section>
-        <section class="cards">
-            <article class="cards">
-                <a href=""><img src="../images/portadaShoesCity.jpg" alt="shoes">PRODUCTO 1</a>
-                <p>contado-visa-master-MP</p>
-                <p>Descripcion breve de producto</p>
-            </article>
-            <article class="cards">
-                <a href=""><img src="../images/portadaShoesCity.jpg" alt="shoes">PRODUCTO 1</a>
-                <p>contado-visa-master-MP</p>
-                <p>Descripcion breve de producto</p>
-            </article>
-            <article class="cards">
-                <a href=""><img src="../images/portadaShoesCity.jpg" alt="shoes">PRODUCTO 1</a>
-                <p>contado-visa-master-MP</p>
-                <p>Descripcion breve de producto</p>
-            </article>
-            <article class="cards">
-                <a href=""><img src="../images/portadaShoesCity.jpg" alt="shoes">PRODUCTO 1</a>
-                <p>contado-visa-master-MP</p>
-                <p>Descripcion breve de producto</p>
-            </article>
-            <article class="cards">
-                <a href=""><img src="../images/portadaShoesCity.jpg" alt="shoes">PRODUCTO 1</a>
-                <p>contado-visa-master-MP</p>
-                <p>Descripcion breve de producto</p>
-            </article>
-            <article class="cards">
-                <a href=""><img src="../images/portadaShoesCity.jpg" alt="shoes">PRODUCTO 1</a>
-                <p>contado-visa-master-MP</p>
-                <p>Descripcion breve de producto</p>
-            </article>
+        <!-- SECCION DE ARTICULOS OUTLET -->
+        <div class="row">
+            <section class="contenedor-outlet">
+                <h2>Productos seleccionados hasta un 50% OFF...</h2>
+                <h2>Busca articulos de outlet...</h2>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Busca en categorias de articulos..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </section>
+            <section class="contenedor-articulos-outlet">
+                <div class="card" style="width: 25vh; background-color:rgb(213, 194, 239);">
+                    <img src="/images/portadaShoesCity.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Nike</h3>
+                      <p class="card-text" style="color: black;">Nike ...........................................</p>
+                      <button type="submit"><a href="">COMPRAR</a></button>
+                    </div>
+                </div>  
+                <div class="card" style="width: 25vh; background-color:rgb(213, 194, 239);">
+                    <img src="/images/portadaShoesCity.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Nike</h3>
+                      <p class="card-text" style="color: black;">Nike ...........................................</p>
+                      <button type="submit"><a href="">COMPRAR</a></button>
+                    </div>
+                </div>  
+                <div class="card" style="width: 25vh; background-color:rgb(213, 194, 239);">
+                    <img src="/images/portadaShoesCity.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Nike</h3>
+                      <p class="card-text" style="color: black;">Nike ...........................................</p>
+                      <button type="submit"><a href="">COMPRAR</a></button>
+                    </div>
+                </div>  
+                <div class="card" style="width: 25vh; background-color:rgb(213, 194, 239);">
+                    <img src="/images/portadaShoesCity.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Nike</h3>
+                      <p class="card-text" style="color: black;">Nike ...........................................</p>
+                      <button type="submit"><a href="">COMPRAR</a></button>
+                    </div>
+                </div>  
+                <div class="card" style="width: 25vh; background-color:rgb(213, 194, 239);">
+                    <img src="/images/portadaShoesCity.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Nike</h3>
+                      <p class="card-text" style="color: black;">Nike ...........................................</p>
+                      <button type="submit"><a href="">COMPRAR</a></button>
+                    </div>
+                </div>  
+                <div class="card" style="width: 25vh; background-color:rgb(213, 194, 239);">
+                    <img src="/images/portadaShoesCity.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Nike</h3>
+                      <p class="card-text" style="color: black;">Nike ...........................................</p>
+                      <button type="submit"><a href="">COMPRAR</a></button>
+                    </div>
+                </div>  
+                <div class="card" style="width: 25vh; background-color:rgb(213, 194, 239);">
+                    <img src="/images/portadaShoesCity.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Nike</h3>
+                      <p class="card-text" style="color: black;">Nike ...........................................</p>
+                      <button type="submit"><a href="">COMPRAR</a></button>
+                    </div>
+                </div>  
+                <div class="card" style="width: 25vh; background-color:rgb(213, 194, 239);">
+                    <img src="/images/portadaShoesCity.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Nike</h3>
+                      <p class="card-text" style="color: black;">Nike ...........................................</p>
+                      <button type="submit"><a href="">COMPRAR</a></button>
+                    </div>
+                </div>  
+                <div class="card" style="width: 25vh; background-color:rgb(213, 194, 239);">
+                    <img src="/images/portadaShoesCity.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Nike</h3>
+                      <p class="card-text" style="color: black;">Nike ...........................................</p>
+                      <button type="submit"><a href="">COMPRAR</a></button>
+                    </div>
+                </div>  
            
-        </section>
+            </section> 
+        </div>
         
-    </main>
-    
-
-    <footer class="footer"> 
-        <a href="">instagram</a> 
-        <a href="">facebook</a>
-        <a href="">Contacto ShoesCity</a>
-    </footer>
+        <!-- SECCION DEL FOOTER -->
+        <div class="row">
+            <footer class="footer"> 
+                <a href="">instagram</a> 
+                <a href="">facebook</a>
+                <a href="">Contacto ShoesCity</a>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
 </body>
 </html>

@@ -460,6 +460,28 @@ a {
     margin: 2px;
     padding: 1vh 0vh;
 }
+.contenedor-outlet button {
+    color: rgb(179, 149, 239);
+    background-color: rgb(44, 45, 45);
+    border: solid 1px rgb(132, 0, 255);
+    
+    /* Fonts de los botones*/
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.contenedor-outlet button:hover {
+    color: rgb(132, 0, 255);;
+    background-color: rgb(213, 194, 239);
+    border: solid 1px rgb(132, 0, 255);
+}
+.contenedor-outlet input {
+    width: 70%;
+    background-color: rgb(213, 194, 239);
+}
+.contenedor-outlet form {
+    justify-content: center;
+}
 .contenedor-articulos-outlet {
     width: 100%;
     margin: 2px;

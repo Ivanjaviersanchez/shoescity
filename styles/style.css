@@ -29,13 +29,13 @@ body {
 h1 {
     text-align: center;
     color: rgb(179, 149, 239);
-    font-size: 7vh;
+    font-size: 6vh;
 }
 h2, h3 {
     text-align: left;
     /* background-color: rgb(44, 45, 45); */
     color: rgb(179, 149, 239);
-    font-size: 1.3rem;
+    font-size: 4vh;
     /* Fonts de los h2*/
     font-family: "New Amsterdam", sans-serif;
     font-weight: 400;
@@ -64,33 +64,37 @@ a {
 
 .header { 
     width: 100%;
-    height: 21vh;
+    height: 21.5vh;
     background-image: url('/images/fondo.png');
     background-size: cover; /* Hace que la imagen cubra todo el área de la sección */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     color: white; /* Cambia el color del texto a blanco para contraste */
     font-weight: 400;
-    
     text-align: center; 
-
     border: solid 1px white;
-    margin: 2px;
 }
 .titulo {
     width: 100%;
-    height: 6vh;
+    height: 12vh;
     text-align: center;
-}
-.login-carrito{
     display: flex;
-    align-items:flex-end;
     flex-direction: column;
-    height: 7vh;
+    margin-bottom: 0.5vh;
+    overflow: hidden; /* Evita que el contenido se desborde */;
+}
+
+.login-carrito{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .login-carrito button {
-    width: 20%;
-    height: 3vh;
+    width: 100%;
+    height: 4vh;
+    margin-top: 1vh;
 }
 .login-carrito button:active {
     color: rgb(132, 0, 255);
@@ -103,13 +107,12 @@ a {
 .nav {
     width: 100%;
     padding: 0;
-    margin: 0;
     background-color: rgb(44, 45, 45);
-    overflow: hidden;   
+    overflow: hidden;  
 }
 .nav ul {
     width: 100%;
-    margin: 2px;
+    margin: 1vh 0vh;
     padding: 0;
     display: flex; 
     justify-content:space-around;
@@ -200,27 +203,20 @@ a {
     overflow: hidden; /* Evita que el contenido se desborde */;
     justify-content: space-around;
     gap: 3vh; /* Controla la separación entre los elementos */
-
     border: solid 1px white; 
 }
-.col h2 {
-    font-size: 4vh;
-    text-align: center;
-    padding-top: 5vh;
-}
+
 
 /*-------------ESTILOS DE SECCION NUEVOS INGRESOS---------*/
 
 .ingresos {
     width: 100%;
-    margin: 2px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
     overflow: hidden; /* Evita que el contenido se desborde */
     justify-content: space-around;
     gap: 3vh; /* Controla la separación entre los elementos */
-    
     border: solid 1px white;
 }
 
@@ -229,7 +225,6 @@ a {
 .servicios {
     width: 100%;
     height: 25vh;
-    padding: 10px;
     margin: 0;
     display: flex;
     flex-direction: column;

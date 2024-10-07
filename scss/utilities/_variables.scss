@@ -1,0 +1,13 @@
+//-----------------VARIABLES PALETA DE COLORES-------
+
+$color-1: rgb(75, 70, 85);
+$color-2: rgb(44, 45, 45);
+$color-3: rgb(179, 149, 239);
+$color-4: rgb(132, 0, 255);
+$color-5: rgb(213, 194, 239);
+
+/*----------------MIXIN SASS-----------*/
+@mixin tamanio ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}

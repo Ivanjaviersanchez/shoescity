@@ -1,0 +1,129 @@
+/*-------------------ESTILOS DEL HEADER-----------------*/
+.header {
+    @include tamanio(100%,21.5vh);
+    background-image: url('/images/fondo.png');
+    background-size: cover;   /* Cubre toda el área de la sección */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: white;   /* Cambia el color del texto a blanco para contraste */
+    font-weight: 400;
+    text-align: center; 
+    overflow: hidden; /* Evita que el contenido se desborde */;
+
+    .titulo {
+        @include tamanio(100%,12vh);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5vh;
+        overflow: hidden; /* Evita que el contenido se desborde */;
+        h1 {
+            text-align: center;
+            color: $color-3;
+            font-size: 6vh;
+        }
+        p {
+            color: white;
+        }
+    }
+
+    .login-carrito {
+        @include tamanio(100%,12vh);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        button {
+            @include tamanio(100%,4vh);
+            margin-top: 1vh;    
+            background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238));
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+        button:active {
+            color: $color-4;
+        }
+        button:hover{
+            border: solid 3px $color-4;
+            a{
+                color: $color-4;
+            }
+        }
+    }
+
+    .nav {
+        @include tamanio(100%,auto);
+        padding: 0;
+        background-color: $color-2;
+        overflow: hidden; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul {
+            width: 100%;
+            margin: 1vh;
+            padding: 0;
+            display: flex; 
+            justify-content:space-around;
+            list-style-type: none;
+            /* Fonts del nav */
+            font-family: "New Amsterdam", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+            li {
+                @include tamanio(100%,5vh);
+                background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238));
+                float: left;
+                
+                padding: 5px;
+                margin: 3px;
+                overflow: hidden;
+                a {
+                    display: block;
+                    text-align: center;
+                    color: white;
+                    font-size: 3vh;;
+                }
+            }
+            li:hover {
+                background-color: $color-1;
+                border: solid 3px $color-4;
+                a{
+                    color: $color-4;
+                }
+                
+            }
+        }
+    }
+}
+
+/*--------------ESTILOS DEL FOOTER---------------*/
+.footer {
+    @include tamanio(100%,8vh);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0; /* Evita que el footer se reduzca */
+    background-color: $color-2;
+    list-style-type: none;
+    padding: 2vh;
+    justify-content: space-around;
+    /* Fonts del footer */
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 2px;
+    a {
+        @include tamanio(100%,4vh);
+        text-align: center;
+        
+    }
+    a:active {
+        color: $color-4;
+    }
+    a:hover{
+        border: solid 3px $color-4;
+       
+    }
+}

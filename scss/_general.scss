@@ -1,0 +1,65 @@
+/*-----------------ESTILOS GENERALES----------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: $color-1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Fonts del body */
+    font-family: "Poppins", sans-serif;
+    font-weight: 200; 
+    font-style: normal;
+}
+h1 {
+    font-size: 1.5em;
+}
+h2, h3 {
+    text-align: left;
+    /* background-color: rgb(44, 45, 45); */
+    color: $color-3;
+    font-size: 1.2em;
+    /* Fonts de los h2*/
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style:normal;
+}
+p {
+    font-size: 1em;
+}
+button {
+    color: $color-3;
+    background-color: $color-2;
+    /* Fonts de los botones*/
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a {
+    color: $color-3;
+    text-decoration: none;    /*quita subrrayado*/
+}  
+
+/* ESTILOS DEL CONTENDOR */
+.container-fluid {
+    padding: 0;
+    flex-grow: 1; /*el contenedor ocupe todo el espacio disponible */
+}
+
+
+
+
+
+

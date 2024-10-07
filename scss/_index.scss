@@ -1,0 +1,114 @@
+/*------------------------ESTILOS DE INDEX.HTML-----------------------*/
+
+/*--------------ESTILOS DE SECCION CAROUSEL---------------*/
+.carousel {
+    @include tamanio(100%,auto);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    overflow: hidden;
+    margin: 2px;
+    padding: 1vh 0vh;
+}
+
+/*--------------ESTILOS DE SECCION CATEGORIAS---------------*/
+.categorias {
+    @include tamanio(100%,auto);
+    padding-top: 2vh;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 3vh;
+    margin: 2px;
+    align-items: center;
+    article {
+        @include tamanio(50%,auto);
+        margin: 5px;
+        a {
+            color: $color-3;
+            text-decoration: none; 
+            img {
+                @include tamanio(100%,50vh);
+            }
+            img:hover{
+                border: solid 3px $color-4;
+            }
+        }
+        a:hover {
+            color: white;
+        }
+        a:active {
+            color: $color-4;
+        }
+    }
+}
+
+/*--------------ESTILOS DE SECCION DE INDUMENTARIA Y NUEVOS INGRESOS---------------*/
+.indumentaria , .ingresos {
+    @include tamanio(100%,auto);
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a una nueva fila */
+    overflow: hidden; /* Evita que el contenido se desborde */;
+    justify-content: space-around;
+    gap: 3vh; /* Controla la separación entre los elementos */
+    h2 {
+        width: 100%;
+        font-size: 2rem;
+    }
+    .card {
+        width: 25vh;
+        margin: 10px;
+        background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238));
+       /*  background-color: $color-5; */
+        .card-body {
+            text-align: center;
+            h3 {
+                margin: 10px 0;
+            }
+            p {
+                color: black;
+            }
+            button {
+                width: 50%;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            button:active {
+                color: $color-4;
+            }
+            button:hover{
+                border: solid 2px $color-4;
+            }
+        }
+    }
+}
+
+/*--------------ESTILOS DE ASIDE DE SERVICIOS---------------*/
+.servicios {
+    @include tamanio(100%,auto);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 2px;
+    h3 {
+        font-size: 2rem;
+    }
+    a {
+        color: $color-3;
+        text-decoration: none;
+        font-size: 2.5vh;
+    }
+    a:active {
+        color: $color-4;
+    }
+    a:hover {
+        color: white;
+    }
+}

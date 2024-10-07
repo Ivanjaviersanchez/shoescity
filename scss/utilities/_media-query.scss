@@ -1,0 +1,67 @@
+/*------MEDIA QUERIES------*/
+
+/* Media query para mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    .container-fluid {
+        justify-content: space-between;  
+    }
+    .header, .carousel, .categorias, .indumentaria, .ingresos, .servicios, .footer {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column; /* Cambiar a columna para apilar elementos */
+        /* align-items: flex-start; */
+        height: auto;
+    }
+    .titulo{
+        align-items: center;
+        margin-left: auto; /* Mueve el título a la derecha */
+        margin-right: auto; /* Centra el título horizontalmente */
+        margin-bottom: 10px;
+    }
+    .login-carrito {
+        margin-left: auto; /* Mueve el login-carrito a la derecha */
+    }
+    .nav {
+        ul {
+            flex-direction: column;
+            justify-content: center;  
+            
+        }
+    }
+    .categorias {
+        flex-direction: column;
+        @include tamanio(100%,auto);
+    }
+
+    .row-madiaquery {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .formulario {
+       width: 100%; 
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1.2em;
+    }  
+}

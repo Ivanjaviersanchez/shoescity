@@ -1,0 +1,226 @@
+/*------------------------ESTILOS DE NOSOTROS.HTML-----------------------*/
+.nosotros {
+    @include tamanio(100%,auto);
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        @include tamanio(80%,auto);
+        list-style-type: none;
+        padding: 2vh;
+        margin: 0; 
+    }
+    p {
+        padding: 2vh;
+        text-align: center;
+        color: $color-3;
+    }
+}
+
+/*------------------------ESTILOS DE COLECCION.HTML-----------------------*/
+.contenedor-coleccion {
+    @include tamanio(100%,auto);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    overflow: hidden;
+    margin: 2px;
+    padding: 1vh 0vh;
+    h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+    }
+    form {
+        width: 100%;
+        justify-content: center;
+        input {
+            width: 70%;
+            background-color: $color-5;
+        }
+        button {
+            color: rgb(179, 149, 239);
+            background-color: $color-2;
+            border: solid 1px $color-4;
+            /* Fonts de los botones*/
+            font-family: "New Amsterdam", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        button:hover {
+            color: $color-4;
+            background-color: $color-5;
+            border: solid 1px $color-4;
+        }
+
+    }
+}
+.contenedor-articulos-coleccion {
+    @include tamanio(100%,auto);
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a una nueva fila */
+    overflow: hidden; /* Evita que el contenido se desborde */;
+    justify-content: space-around;
+    gap: 3vh; /* Controla la separación entre los elementos */
+    .card {
+        width: 25vh;
+        margin: 10px;
+        background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238));
+        .card-body {
+            text-align: center;
+            h3 {
+                margin: 10px 0;
+            }
+            p {
+                color: black;
+            }
+            button {
+                width: 50%;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            button:active {
+                color: $color-4;
+            }
+            button:hover{
+                border: solid 2px $color-4;
+            }
+        }
+    }
+}
+
+
+/*------------------------ESTILOS DE CONTACTO-MAYORISTA.HTML-----------------------*/
+.formulario {
+    @include tamanio(100%,auto);
+    border: 2px solid $color-3;
+    margin: 1vh;
+    padding: 1vh;
+    background-color: $color-5; 
+    button {
+        color: $color-3;
+        background-color: $color-2;
+        border: solid 1px $color-4;
+        
+        /* Fonts de los botones*/
+        font-family: "New Amsterdam", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    button:hover {
+        color: $color-4;
+        background-color: $color-5;
+        border: solid 1px $color-4;
+    }
+}
+
+/*------------------------ESTILOS DE MDPSTORE.HTML-----------------------*/
+
+.datos-mdpstore {
+    @include tamanio(100%,auto);
+    list-style-type: none;
+    margin: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    p {
+        color: white;
+    }
+}
+.carousel-mdpstore {
+    @include tamanio(100%,auto);
+    margin: 1vh;
+}
+.mapa-mdpstore {
+    @include tamanio(50%,auto);
+    margin: 1vh;
+}
+
+/*------------------------ESTILOS DE OUTLET.HTML-----------------------*/
+
+.contenedor-outlet {
+    @include tamanio(100%,auto);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    overflow: hidden;
+    margin: 2px;
+    padding: 1vh 0vh;
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    button {
+        color: $color-3;
+        background-color: $color-2;
+        border: solid 1px $color-4;
+        
+        /* Fonts de los botones*/
+        font-family: "New Amsterdam", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    button:hover {
+        color: $color-4;
+        background-color: $color-5;
+        border: solid 1px $color-4;
+    }
+    input {
+        width: 70%;
+        background-color: $color-5;
+    }
+    form {
+        justify-content: center;
+    }
+}
+
+.contenedor-articulos-outlet {
+    @include tamanio(100%,auto);
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a una nueva fila */
+    overflow: hidden; /* Evita que el contenido se desborde */;
+    gap: 3vh; /* Controla la separación entre los elementos */
+    .card {
+        width: 25vh;
+        margin: 10px;
+        background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238));
+        .card-body {
+            text-align: center;
+            h3 {
+                margin: 10px 0;
+            }
+            p {
+                color: black;
+            }
+            button {
+                width: 50%;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            button:active {
+                color: $color-4;
+            }
+            button:hover{
+                border: solid 2px $color-4;
+            }
+        }
+    }
+}

@@ -34,8 +34,8 @@
         flex-direction: column;
         button {
             @include tamanio(100%,4vh);
-            margin-top: 1vh;    
-            background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238));
+            margin-top: 1vh;   
+            background-color: $color-3; 
             a {
                 color: white;
                 text-decoration: none;
@@ -74,7 +74,8 @@
 
             li {
                 @include tamanio(100%,5vh);
-                background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238));
+                background-color: $color-3;
+                /* background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238)); */
                 float: left;
                 
                 padding: 5px;

@@ -1,7 +1,7 @@
 /*-------------------ESTILOS DEL HEADER-----------------*/
 .header {
     @include tamanio(100%,21.5vh);
-    background-image: url('/images/fondo.png');
+    background-image: url('../images/fondo.png');
     background-size: cover;   /* Cubre toda el área de la sección */
     background-position: center;  /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -75,21 +75,22 @@
             li {
                 @include tamanio(100%,5vh);
                 background-color: $color-3;
-                /* background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238)); */
-                float: left;
-                
-                padding: 5px;
                 margin: 3px;
                 overflow: hidden;
                 a {
                     display: block;
                     text-align: center;
                     color: white;
-                    font-size: 3vh;;
+                    font-size: 3vh;
+                    transition: all 0.5s ease-out;
                 }
+                a:hover, a:focus {
+                    background-color: $color-5;
+                    color: #333;
+                }
+               
             }
             li:hover {
-                background-color: $color-1;
                 border: solid 3px $color-4;
                 a{
                     color: $color-4;

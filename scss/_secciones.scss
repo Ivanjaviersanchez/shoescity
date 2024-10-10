@@ -71,6 +71,10 @@
         width: 25vh;
         margin: 10px;
         background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238));
+        box-sizing: 1px;
+        border: none;
+        border-radius: 15px;
+        -webkit-box-shadow: 0px 5px 10px 8px rgba(143, 103, 198, 0.66); -moz-b
         .card-body {
             text-align: center;
             h3 {
@@ -99,11 +103,17 @@
 
 /*------------------------ESTILOS DE CONTACTO-MAYORISTA.HTML-----------------------*/
 .formulario {
+    
     @include tamanio(100%,auto);
     border: 2px solid $color-3;
-    margin: 1vh;
-    padding: 1vh;
+    margin: 3vh;
+    padding: 7vh;
+    overflow: hidden;
     background-color: $color-5; 
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 5px 10px 8px rgba(143, 103, 198, 0.66); -moz-b
+    
+    
     button {
         color: $color-3;
         background-color: $color-2;
@@ -200,6 +210,10 @@
         width: 25vh;
         margin: 10px;
         background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238));
+        box-sizing: 1px;
+        border: none;
+        border-radius: 15px;
+        -webkit-box-shadow: 0px 5px 10px 8px rgba(143, 103, 198, 0.66); -moz-b
         .card-body {
             text-align: center;
             h3 {

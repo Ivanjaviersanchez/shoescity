@@ -7,21 +7,26 @@
     justify-content: center;
     text-align: center;
     align-content: center;
+    align-items: center;
     overflow: hidden;
     margin: 2px;
-    padding: 1vh 0vh;
+    padding: 3vh ;
+    .carousel {
+        @include tamanio(80%,auto);
+    }
 }
 
 /*--------------ESTILOS DE SECCION CATEGORIAS---------------*/
 .categorias {
     @include tamanio(100%,auto);
-    padding-top: 2vh;
-    list-style-type: none;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     text-align: center;
     font-size: 3vh;
     margin: 2px;
+    padding-top: 2vh;
+    list-style-type: none;
     align-items: center;
     article {
         @include tamanio(50%,auto);
@@ -63,7 +68,11 @@
         width: 25vh;
         margin: 10px;
         background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238));
-       /*  background-color: $color-5; */
+        box-sizing: 1px;
+        border: none;
+        border-radius: 15px;
+        -webkit-box-shadow: 0px 5px 10px 8px rgba(143, 103, 198, 0.66); -moz-b
+        
         .card-body {
             text-align: center;
             h3 {
@@ -91,12 +100,15 @@
 
 /*--------------ESTILOS DE ASIDE DE SERVICIOS---------------*/
 .servicios {
-    @include tamanio(100%,auto);
+    @include tamanio(100%,100%);
     margin: 0;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     text-align: left;
     margin: 2px;
+    padding: 5vh;
+
     h3 {
         font-size: 2rem;
     }
@@ -104,6 +116,7 @@
         color: $color-3;
         text-decoration: none;
         font-size: 2.5vh;
+        margin: 2px;
     }
     a:active {
         color: $color-4;

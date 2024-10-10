@@ -51,12 +51,22 @@ a {
     color: $color-3;
     text-decoration: none;    /*quita subrrayado*/
 }  
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* ESTILOS DEL CONTENDOR */
 .container-fluid {
     padding: 0;
-    flex-grow: 1; /*el contenedor ocupe todo el espacio disponible */
+    flex-grow: 1; /*el contenedor ocupe todo el espacio disponible */   
 }
+
+.row {
+    flex: 1; // Permite que las filas ocupen el espacio restante 
+}
+
+
 
 
 

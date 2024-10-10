@@ -17,7 +17,6 @@
     .header {
         display: flex;
         flex-direction: column; /* Cambiar a columna para apilar elementos */
-        /* align-items: flex-start; */
         height: auto;
     }
     .titulo{
@@ -36,9 +35,21 @@
             
         }
     }
+    .carousel{
+        @include tamanio(100%,auto);
+        img {
+            @include tamanio(100%,auto);
+        }
+
+    }
     .categorias {
+        display: flex;
         flex-direction: column;
         @include tamanio(100%,auto);
+        article {
+            @include tamanio(80%,auto);
+            ;
+        }
     }
 
     .row-madiaquery {

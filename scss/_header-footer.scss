@@ -65,7 +65,7 @@
             margin: 1vh;
             padding: 0;
             display: flex; 
-            justify-content:space-around;
+            justify-content: space-between;
             list-style-type: none;
             /* Fonts del nav */
             font-family: "New Amsterdam", sans-serif;
@@ -86,7 +86,7 @@
                 }
                 a:hover, a:focus {
                     background-color: $color-5;
-                    color: #333;
+                    
                 }
                
             }

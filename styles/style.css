@@ -62,10 +62,19 @@ a {
   text-decoration: none; /*quita subrrayado*/
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ESTILOS DEL CONTENDOR */
 .container-fluid {
   padding: 0;
   flex-grow: 1; /*el contenedor ocupe todo el espacio disponible */
+}
+
+.row {
+  flex: 1;
 }
 
 /*-------------------ESTILOS DEL HEADER-----------------*/
@@ -139,7 +148,7 @@ a {
   margin: 1vh;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
   /* Fonts del nav */
   font-family: "New Amsterdam", sans-serif;
@@ -162,7 +171,6 @@ a {
 }
 .header .nav ul li a:hover, .header .nav ul li a:focus {
   background-color: rgb(213, 194, 239);
-  color: #333;
 }
 .header .nav ul li:hover {
   border: solid 3px rgb(132, 0, 255);
@@ -209,22 +217,28 @@ a {
   justify-content: center;
   text-align: center;
   align-content: center;
+  align-items: center;
   overflow: hidden;
   margin: 2px;
-  padding: 1vh 0vh;
+  padding: 3vh;
+}
+.carousel .carousel {
+  width: 80%;
+  height: auto;
 }
 
 /*--------------ESTILOS DE SECCION CATEGORIAS---------------*/
 .categorias {
   width: 100%;
   height: auto;
-  padding-top: 2vh;
-  list-style-type: none;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   text-align: center;
   font-size: 3vh;
   margin: 2px;
+  padding-top: 2vh;
+  list-style-type: none;
   align-items: center;
 }
 .categorias article {
@@ -270,40 +284,45 @@ a {
   width: 25vh;
   margin: 10px;
   background-image: linear-gradient(to left, rgb(213, 194, 239), rgb(143, 130, 238));
-  /*  background-color: $color-5; */
+  box-sizing: 1px;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 5px 10px 8px rgba(143, 103, 198, 0.66);
 }
-.indumentaria .card .card-body, .ingresos .card .card-body {
+.indumentaria .card -moz-b .card-body, .ingresos .card -moz-b .card-body {
   text-align: center;
 }
-.indumentaria .card .card-body h3, .ingresos .card .card-body h3 {
+.indumentaria .card -moz-b .card-body h3, .ingresos .card -moz-b .card-body h3 {
   margin: 10px 0;
 }
-.indumentaria .card .card-body p, .ingresos .card .card-body p {
+.indumentaria .card -moz-b .card-body p, .ingresos .card -moz-b .card-body p {
   color: black;
 }
-.indumentaria .card .card-body button, .ingresos .card .card-body button {
+.indumentaria .card -moz-b .card-body button, .ingresos .card -moz-b .card-body button {
   width: 50%;
 }
-.indumentaria .card .card-body button a, .ingresos .card .card-body button a {
+.indumentaria .card -moz-b .card-body button a, .ingresos .card -moz-b .card-body button a {
   color: white;
   text-decoration: none;
 }
-.indumentaria .card .card-body button:active, .ingresos .card .card-body button:active {
+.indumentaria .card -moz-b .card-body button:active, .ingresos .card -moz-b .card-body button:active {
   color: rgb(132, 0, 255);
 }
-.indumentaria .card .card-body button:hover, .ingresos .card .card-body button:hover {
+.indumentaria .card -moz-b .card-body button:hover, .ingresos .card -moz-b .card-body button:hover {
   border: solid 2px rgb(132, 0, 255);
 }
 
 /*--------------ESTILOS DE ASIDE DE SERVICIOS---------------*/
 .servicios {
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   text-align: left;
   margin: 2px;
+  padding: 5vh;
 }
 .servicios h3 {
   font-size: 2rem;
@@ -312,6 +331,7 @@ a {
   color: rgb(179, 149, 239);
   text-decoration: none;
   font-size: 2.5vh;
+  margin: 2px;
 }
 .servicios a:active {
   color: rgb(132, 0, 255);
@@ -398,27 +418,31 @@ a {
   width: 25vh;
   margin: 10px;
   background-image: linear-gradient(to left, rgb(213, 194, 239), rgb(143, 130, 238));
+  box-sizing: 1px;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 5px 10px 8px rgba(143, 103, 198, 0.66);
 }
-.contenedor-articulos-coleccion .card .card-body {
+.contenedor-articulos-coleccion .card -moz-b .card-body {
   text-align: center;
 }
-.contenedor-articulos-coleccion .card .card-body h3 {
+.contenedor-articulos-coleccion .card -moz-b .card-body h3 {
   margin: 10px 0;
 }
-.contenedor-articulos-coleccion .card .card-body p {
+.contenedor-articulos-coleccion .card -moz-b .card-body p {
   color: black;
 }
-.contenedor-articulos-coleccion .card .card-body button {
+.contenedor-articulos-coleccion .card -moz-b .card-body button {
   width: 50%;
 }
-.contenedor-articulos-coleccion .card .card-body button a {
+.contenedor-articulos-coleccion .card -moz-b .card-body button a {
   color: white;
   text-decoration: none;
 }
-.contenedor-articulos-coleccion .card .card-body button:active {
+.contenedor-articulos-coleccion .card -moz-b .card-body button:active {
   color: rgb(132, 0, 255);
 }
-.contenedor-articulos-coleccion .card .card-body button:hover {
+.contenedor-articulos-coleccion .card -moz-b .card-body button:hover {
   border: solid 2px rgb(132, 0, 255);
 }
 
@@ -427,11 +451,14 @@ a {
   width: 100%;
   height: auto;
   border: 2px solid rgb(179, 149, 239);
-  margin: 1vh;
-  padding: 1vh;
+  margin: 3vh;
+  padding: 7vh;
+  overflow: hidden;
   background-color: rgb(213, 194, 239);
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 5px 10px 8px rgba(143, 103, 198, 0.66);
 }
-.formulario button {
+.formulario -moz-b button {
   color: rgb(179, 149, 239);
   background-color: rgb(44, 45, 45);
   border: solid 1px rgb(132, 0, 255);
@@ -530,27 +557,31 @@ a {
   width: 25vh;
   margin: 10px;
   background-image: linear-gradient(to left, rgb(213, 194, 239), rgb(143, 130, 238));
+  box-sizing: 1px;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 5px 10px 8px rgba(143, 103, 198, 0.66);
 }
-.contenedor-articulos-outlet .card .card-body {
+.contenedor-articulos-outlet .card -moz-b .card-body {
   text-align: center;
 }
-.contenedor-articulos-outlet .card .card-body h3 {
+.contenedor-articulos-outlet .card -moz-b .card-body h3 {
   margin: 10px 0;
 }
-.contenedor-articulos-outlet .card .card-body p {
+.contenedor-articulos-outlet .card -moz-b .card-body p {
   color: black;
 }
-.contenedor-articulos-outlet .card .card-body button {
+.contenedor-articulos-outlet .card -moz-b .card-body button {
   width: 50%;
 }
-.contenedor-articulos-outlet .card .card-body button a {
+.contenedor-articulos-outlet .card -moz-b .card-body button a {
   color: white;
   text-decoration: none;
 }
-.contenedor-articulos-outlet .card .card-body button:active {
+.contenedor-articulos-outlet .card -moz-b .card-body button:active {
   color: rgb(132, 0, 255);
 }
-.contenedor-articulos-outlet .card .card-body button:hover {
+.contenedor-articulos-outlet .card -moz-b .card-body button:hover {
   border: solid 2px rgb(132, 0, 255);
 }
 
@@ -571,7 +602,6 @@ a {
   .header {
     display: flex;
     flex-direction: column; /* Cambiar a columna para apilar elementos */
-    /* align-items: flex-start; */
     height: auto;
   }
   .titulo {
@@ -587,9 +617,22 @@ a {
     flex-direction: column;
     justify-content: center;
   }
+  .carousel {
+    width: 100%;
+    height: auto;
+  }
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
   .categorias {
+    display: flex;
     flex-direction: column;
     width: 100%;
+    height: auto;
+  }
+  .categorias article {
+    width: 80%;
     height: auto;
   }
   .row-madiaquery {

@@ -219,7 +219,6 @@ img {
   align-content: center;
   align-items: center;
   overflow: hidden;
-  margin: 2px;
   padding: 3vh;
 }
 .carousel .carousel {
@@ -236,31 +235,31 @@ img {
   justify-content: center;
   text-align: center;
   font-size: 3vh;
-  margin: 2px;
+  /* margin: 2px; */
   padding-top: 2vh;
   list-style-type: none;
   align-items: center;
 }
-.categorias article {
+.categorias div {
   width: 50%;
   height: auto;
   margin: 5px;
 }
-.categorias article a {
+.categorias div a {
   color: rgb(179, 149, 239);
   text-decoration: none;
 }
-.categorias article a img {
+.categorias div a img {
   width: 100%;
   height: 50vh;
 }
-.categorias article a img:hover {
+.categorias div a img:hover {
   border: solid 3px rgb(132, 0, 255);
 }
-.categorias article a:hover {
+.categorias div a:hover {
   color: white;
 }
-.categorias article a:active {
+.categorias div a:active {
   color: rgb(132, 0, 255);
 }
 
@@ -268,7 +267,7 @@ img {
 .indumentaria, .ingresos {
   width: 100%;
   height: auto;
-  margin: 2px;
+  /* margin: 2px; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; /* Permite que los elementos se muevan a una nueva fila */
@@ -321,7 +320,7 @@ img {
   flex-direction: column;
   overflow: hidden;
   text-align: left;
-  margin: 2px;
+  /* margin: 2px; */
   padding: 5vh;
 }
 .servicios h3 {
@@ -482,9 +481,10 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-.datos-mdpstore h2 {
   text-align: center;
+  -webkit-box-shadow: 0px 5px 10px 8px rgba(143, 103, 198, 0.66);
+}
+.datos-mdpstore -moz-b h2 {
   font-size: 2rem;
 }
 .datos-mdpstore p {

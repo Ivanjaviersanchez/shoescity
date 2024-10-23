@@ -139,9 +139,10 @@
     margin: 1vh;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
+    text-align: center;
+    -webkit-box-shadow: 0px 5px 10px 8px rgba(143, 103, 198, 0.66); -moz-b
     h2 {
-        text-align: center;
         font-size: 2rem;
     }
     p {
@@ -150,7 +151,7 @@
 }
 .carousel-mdpstore {
     @include tamanio(100%,auto);
-    margin: 1vh;
+    margin: 1vh;  
 }
 .mapa-mdpstore {
     @include tamanio(50%,auto);

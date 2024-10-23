@@ -9,8 +9,8 @@
     align-content: center;
     align-items: center;
     overflow: hidden;
-    margin: 2px;
-    padding: 3vh ;
+    
+    padding: 3vh;
     .carousel {
         @include tamanio(80%,auto);
     }
@@ -24,11 +24,11 @@
     justify-content: center;
     text-align: center;
     font-size: 3vh;
-    margin: 2px;
+    /* margin: 2px; */
     padding-top: 2vh;
     list-style-type: none;
     align-items: center;
-    article {
+    div {
         @include tamanio(50%,auto);
         margin: 5px;
         a {
@@ -53,7 +53,7 @@
 /*--------------ESTILOS DE SECCION DE INDUMENTARIA Y NUEVOS INGRESOS---------------*/
 .indumentaria , .ingresos {
     @include tamanio(100%,auto);
-    margin: 2px;
+    /* margin: 2px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; /* Permite que los elementos se muevan a una nueva fila */
@@ -106,7 +106,7 @@
     flex-direction: column;
     overflow: hidden;
     text-align: left;
-    margin: 2px;
+    /* margin: 2px; */
     padding: 5vh;
 
     h3 {

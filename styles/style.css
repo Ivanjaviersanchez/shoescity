@@ -80,8 +80,8 @@ img {
 /*-------------------ESTILOS DEL HEADER-----------------*/
 .header {
   width: 100%;
-  height: 21.5vh;
-  background-image: url("../images/fondo.png");
+  height: auto;
+  background-image: url("/images/logoshoescity.webp");
   background-size: cover; /* Cubre toda el área de la sección */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -101,7 +101,7 @@ img {
 }
 .header .titulo h1 {
   text-align: center;
-  color: rgb(179, 149, 239);
+  color: white;
   font-size: 6vh;
 }
 .header .titulo p {
@@ -137,15 +137,20 @@ img {
   width: 100%;
   height: auto;
   padding: 0;
-  background-color: rgb(44, 45, 45);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.header .nav ul {
+.header .nav div {
+  background-color: rgb(75, 70, 85);
+}
+.header .nav div button {
+  background-color: rgb(179, 149, 239);
+}
+.header .nav div div ul {
   width: 100%;
-  margin: 1vh;
+  margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -155,27 +160,27 @@ img {
   font-weight: 400;
   font-style: normal;
 }
-.header .nav ul li {
+.header .nav div div ul li {
   width: 100%;
   height: 5vh;
   background-color: rgb(179, 149, 239);
-  margin: 3px;
+  margin: 0.5vh;
   overflow: hidden;
 }
-.header .nav ul li a {
+.header .nav div div ul li a {
   display: block;
   text-align: center;
   color: white;
   font-size: 3vh;
   transition: all 0.5s ease-out;
 }
-.header .nav ul li a:hover, .header .nav ul li a:focus {
+.header .nav div div ul li a:hover, .header .nav div div ul li a:focus {
   background-color: rgb(213, 194, 239);
 }
-.header .nav ul li:hover {
+.header .nav div div ul li:hover {
   border: solid 3px rgb(132, 0, 255);
 }
-.header .nav ul li:hover a {
+.header .nav div div ul li:hover a {
   color: rgb(132, 0, 255);
 }
 

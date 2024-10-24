@@ -1,7 +1,7 @@
 /*-------------------ESTILOS DEL HEADER-----------------*/
 .header {
-    @include tamanio(100%,21.5vh);
-    background-image: url('../images/fondo.png');
+    @include tamanio(100%,auto);
+    background-image: url('/images/logoshoescity.webp');
     background-size: cover;   /* Cubre toda el área de la sección */
     background-position: center;  /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -9,6 +9,7 @@
     font-weight: 400;
     text-align: center; 
     overflow: hidden; /* Evita que el contenido se desborde */;
+
 
     .titulo {
         @include tamanio(100%,12vh);
@@ -19,7 +20,7 @@
         overflow: hidden; /* Evita que el contenido se desborde */;
         h1 {
             text-align: center;
-            color: $color-3;
+            color: white;
             font-size: 6vh;
         }
         p {
@@ -55,47 +56,51 @@
     .nav {
         @include tamanio(100%,auto);
         padding: 0;
-        background-color: $color-2;
+        
         overflow: hidden; 
         display: flex;
         flex-direction: column;
         align-items: center;
-        ul {
-            width: 100%;
-            margin: 1vh;
-            padding: 0;
-            display: flex; 
-            justify-content: space-between;
-            list-style-type: none;
-            /* Fonts del nav */
-            font-family: "New Amsterdam", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-
-            li {
-                @include tamanio(100%,5vh);
+        div {    
+            background-color: $color-1;
+            button{
                 background-color: $color-3;
-                margin: 3px;
-                overflow: hidden;
-                a {
-                    display: block;
-                    text-align: center;
-                    color: white;
-                    font-size: 3vh;
-                    transition: all 0.5s ease-out;
-                }
-                a:hover, a:focus {
-                    background-color: $color-5;
-                    
-                }
-               
             }
-            li:hover {
-                border: solid 3px $color-4;
-                a{
-                    color: $color-4;
+            div {
+                ul {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    display: flex; 
+                    justify-content: space-between;
+                    list-style-type: none;
+                    /* Fonts del nav */
+                    font-family: "New Amsterdam", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    li {
+                        @include tamanio(100%,5vh);
+                        background-color: $color-3;
+                        margin: 0.5vh;
+                        overflow: hidden;
+                        a {
+                            display: block;
+                            text-align: center;
+                            color: white;
+                            font-size: 3vh;
+                            transition: all 0.5s ease-out;
+                        }
+                        a:hover, a:focus {
+                            background-color: $color-5;
+                        }
+                    }
+                    li:hover {
+                        border: solid 3px $color-4;
+                        a{
+                            color: $color-4;
+                        } 
+                    }
                 }
-                
             }
         }
     }

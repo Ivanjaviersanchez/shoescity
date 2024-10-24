@@ -9,10 +9,12 @@
     align-content: center;
     align-items: center;
     overflow: hidden;
-    
     padding: 3vh;
-    .carousel {
-        @include tamanio(80%,auto);
+    div {
+        img {
+            display: block;
+            width: 100%;
+        }
     }
 }
 
@@ -66,6 +68,7 @@
     }
     .card {
         width: 25vh;
+        height: 50vh;
         margin: 10px;
         background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238));
         box-sizing: 1px;
@@ -79,12 +82,11 @@
                 margin: 10px 0;
             }
             p {
-                color: black;
+                
             }
             button {
-                width: 50%;
                 a {
-                    color: white;
+                    
                     text-decoration: none;
                 }
             }
@@ -98,7 +100,7 @@
     }
 }
 
-/*--------------ESTILOS DE ASIDE DE SERVICIOS---------------*/
+/*--------------ESTILOS DE SECCION DE SERVICIOS---------------*/
 .servicios {
     @include tamanio(100%,100%);
     margin: 0;
@@ -106,10 +108,8 @@
     flex-direction: column;
     overflow: hidden;
     text-align: left;
-    /* margin: 2px; */
-    padding: 5vh;
-
-    h3 {
+    padding-left: 3vh;
+    h2 {
         font-size: 2rem;
     }
     a {

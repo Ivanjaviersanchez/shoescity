@@ -226,9 +226,9 @@ img {
   overflow: hidden;
   padding: 3vh;
 }
-.carousel .carousel {
-  width: 80%;
-  height: auto;
+.carousel div img {
+  display: block;
+  width: 100%;
 }
 
 /*--------------ESTILOS DE SECCION CATEGORIAS---------------*/
@@ -286,6 +286,7 @@ img {
 }
 .indumentaria .card, .ingresos .card {
   width: 25vh;
+  height: 50vh;
   margin: 10px;
   background-image: linear-gradient(to left, rgb(213, 194, 239), rgb(143, 130, 238));
   box-sizing: 1px;
@@ -299,14 +300,7 @@ img {
 .indumentaria .card -moz-b .card-body h3, .ingresos .card -moz-b .card-body h3 {
   margin: 10px 0;
 }
-.indumentaria .card -moz-b .card-body p, .ingresos .card -moz-b .card-body p {
-  color: black;
-}
-.indumentaria .card -moz-b .card-body button, .ingresos .card -moz-b .card-body button {
-  width: 50%;
-}
 .indumentaria .card -moz-b .card-body button a, .ingresos .card -moz-b .card-body button a {
-  color: white;
   text-decoration: none;
 }
 .indumentaria .card -moz-b .card-body button:active, .ingresos .card -moz-b .card-body button:active {
@@ -316,7 +310,7 @@ img {
   border: solid 2px rgb(132, 0, 255);
 }
 
-/*--------------ESTILOS DE ASIDE DE SERVICIOS---------------*/
+/*--------------ESTILOS DE SECCION DE SERVICIOS---------------*/
 .servicios {
   width: 100%;
   height: 100%;
@@ -325,10 +319,9 @@ img {
   flex-direction: column;
   overflow: hidden;
   text-align: left;
-  /* margin: 2px; */
-  padding: 5vh;
+  padding-left: 3vh;
 }
-.servicios h3 {
+.servicios h2 {
   font-size: 2rem;
 }
 .servicios a {
@@ -363,7 +356,7 @@ img {
 .nosotros p {
   padding: 2vh;
   text-align: center;
-  color: rgb(179, 149, 239);
+  color: rgb(213, 194, 239);
 }
 
 /*------------------------ESTILOS DE COLECCION.HTML-----------------------*/

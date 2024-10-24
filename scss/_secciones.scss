@@ -14,7 +14,7 @@
     p {
         padding: 2vh;
         text-align: center;
-        color: $color-3;
+        color: $color-5;
     }
 }
 
@@ -152,6 +152,7 @@
 .carousel-mdpstore {
     @include tamanio(100%,auto);
     margin: 1vh;  
+    
 }
 .mapa-mdpstore {
     @include tamanio(50%,auto);

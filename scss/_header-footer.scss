@@ -9,7 +9,11 @@
     font-weight: 400;
     text-align: center; 
     overflow: hidden; /* Evita que el contenido se desborde */;
-
+    
+    position: fixed; /* Fija el header en su posición */
+    top: 0; /* Se mantiene en la parte superior */
+    left: 0;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
 
     .titulo {
         @include tamanio(100%,12vh);
@@ -56,13 +60,13 @@
     .nav {
         @include tamanio(100%,auto);
         padding: 0;
-        
+        padding-bottom: 0.5vh;
         overflow: hidden; 
         display: flex;
         flex-direction: column;
         align-items: center;
         div {    
-            background-color: $color-1;
+            /* background-color: $color-3; */ 
             button{
                 background-color: $color-3;
             }
@@ -83,6 +87,7 @@
                         background-color: $color-3;
                         margin: 0.5vh;
                         overflow: hidden;
+                        margin-top: 1vh;   
                         a {
                             display: block;
                             text-align: center;

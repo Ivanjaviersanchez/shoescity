@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2vh;
     img {
         @include tamanio(80%,auto);
         list-style-type: none;
@@ -27,8 +28,7 @@
     text-align: center;
     align-content: center;
     overflow: hidden;
-    margin: 2px;
-    padding: 1vh 0vh;
+    padding: 3vh;
     h2 {
         width: 100%;
         text-align: center;
@@ -60,7 +60,8 @@
 }
 .contenedor-articulos-coleccion {
     @include tamanio(100%,auto);
-    margin: 2px;
+    margin: 2vh;
+    padding: 3vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; /* Permite que los elementos se muevan a una nueva fila */
@@ -102,8 +103,8 @@
 
 
 /*------------------------ESTILOS DE CONTACTO-MAYORISTA.HTML-----------------------*/
+
 .formulario {
-    
     @include tamanio(100%,auto);
     border: 2px solid $color-3;
     margin: 3vh;
@@ -112,8 +113,6 @@
     background-color: $color-5; 
     border-radius: 15px;
     -webkit-box-shadow: 0px 5px 10px 8px rgba(143, 103, 198, 0.66); -moz-b
-    
-    
     button {
         color: $color-3;
         background-color: $color-2;

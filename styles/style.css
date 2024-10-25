@@ -77,6 +77,10 @@ img {
   flex: 1;
 }
 
+.margin-contenido {
+  margin-top: 22vh;
+}
+
 /*-------------------ESTILOS DEL HEADER-----------------*/
 .header {
   width: 100%;
@@ -89,6 +93,10 @@ img {
   font-weight: 400;
   text-align: center;
   overflow: hidden; /* Evita que el contenido se desborde */
+  position: fixed; /* Fija el header en su posición */
+  top: 0; /* Se mantiene en la parte superior */
+  left: 0;
+  z-index: 1000; /* Asegura que esté por encima del contenido */
 }
 .header .titulo {
   width: 100%;
@@ -137,13 +145,14 @@ img {
   width: 100%;
   height: auto;
   padding: 0;
+  padding-bottom: 0.5vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .header .nav div {
-  background-color: rgb(75, 70, 85);
+  /* background-color: $color-3; */
 }
 .header .nav div button {
   background-color: rgb(179, 149, 239);
@@ -166,6 +175,7 @@ img {
   background-color: rgb(179, 149, 239);
   margin: 0.5vh;
   overflow: hidden;
+  margin-top: 1vh;
 }
 .header .nav div div ul li a {
   display: block;
@@ -224,9 +234,11 @@ img {
   align-content: center;
   align-items: center;
   overflow: hidden;
-  padding: 3vh;
+  padding: 2vh;
 }
 .carousel div img {
+  width: 70%;
+  height: auto;
   display: block;
   width: 100%;
 }
@@ -240,7 +252,6 @@ img {
   justify-content: center;
   text-align: center;
   font-size: 3vh;
-  /* margin: 2px; */
   padding-top: 2vh;
   list-style-type: none;
   align-items: center;
@@ -320,6 +331,8 @@ img {
   overflow: hidden;
   text-align: left;
   padding-left: 3vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 .servicios h2 {
   font-size: 2rem;
@@ -345,6 +358,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2vh;
 }
 .nosotros img {
   width: 80%;
@@ -369,8 +383,7 @@ img {
   text-align: center;
   align-content: center;
   overflow: hidden;
-  margin: 2px;
-  padding: 1vh 0vh;
+  padding: 3vh;
 }
 .contenedor-coleccion h2 {
   width: 100%;
@@ -403,7 +416,8 @@ img {
 .contenedor-articulos-coleccion {
   width: 100%;
   height: auto;
-  margin: 2px;
+  margin: 2vh;
+  padding: 3vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; /* Permite que los elementos se muevan a una nueva fila */

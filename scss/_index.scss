@@ -9,9 +9,10 @@
     align-content: center;
     align-items: center;
     overflow: hidden;
-    padding: 3vh;
+    padding: 2vh;
     div {
         img {
+            @include tamanio(70%,auto);
             display: block;
             width: 100%;
         }
@@ -26,7 +27,6 @@
     justify-content: center;
     text-align: center;
     font-size: 3vh;
-    /* margin: 2px; */
     padding-top: 2vh;
     list-style-type: none;
     align-items: center;
@@ -109,6 +109,8 @@
     overflow: hidden;
     text-align: left;
     padding-left: 3vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     h2 {
         font-size: 2rem;
     }

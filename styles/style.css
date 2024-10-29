@@ -294,10 +294,11 @@ img {
 .indumentaria h2, .ingresos h2 {
   width: 100%;
   font-size: 2rem;
+  text-align: center;
 }
 .indumentaria .card, .ingresos .card {
   width: 25vh;
-  height: 50vh;
+  height: 65vh;
   margin: 10px;
   background-image: linear-gradient(to left, rgb(213, 194, 239), rgb(143, 130, 238));
   box-sizing: 1px;
@@ -311,7 +312,14 @@ img {
 .indumentaria .card -moz-b .card-body h3, .ingresos .card -moz-b .card-body h3 {
   margin: 10px 0;
 }
+.indumentaria .card -moz-b .card-body p, .ingresos .card -moz-b .card-body p {
+  color: black;
+}
+.indumentaria .card -moz-b .card-body button, .ingresos .card -moz-b .card-body button {
+  width: 50%;
+}
 .indumentaria .card -moz-b .card-body button a, .ingresos .card -moz-b .card-body button a {
+  color: white;
   text-decoration: none;
 }
 .indumentaria .card -moz-b .card-body button:active, .ingresos .card -moz-b .card-body button:active {
@@ -427,6 +435,7 @@ img {
 }
 .contenedor-articulos-coleccion .card {
   width: 25vh;
+  height: 65vh;
   margin: 10px;
   background-image: linear-gradient(to left, rgb(213, 194, 239), rgb(143, 130, 238));
   box-sizing: 1px;
@@ -573,6 +582,7 @@ img {
 }
 .contenedor-articulos-outlet .card {
   width: 25vh;
+  height: 65vh;
   margin: 10px;
   background-image: linear-gradient(to left, rgb(213, 194, 239), rgb(143, 130, 238));
   box-sizing: 1px;

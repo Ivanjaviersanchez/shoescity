@@ -70,6 +70,7 @@
     gap: 3vh; /* Controla la separación entre los elementos */
     .card {
         width: 25vh;
+        height: 65vh;
         margin: 10px;
         background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238));
         box-sizing: 1px;
@@ -214,6 +215,7 @@
     gap: 3vh; /* Controla la separación entre los elementos */
     .card {
         width: 25vh;
+        height: 65vh;
         margin: 10px;
         background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238));
         box-sizing: 1px;

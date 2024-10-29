@@ -65,28 +65,29 @@
     h2 {
         width: 100%;
         font-size: 2rem;
+        text-align: center;
     }
     .card {
         width: 25vh;
-        height: 50vh;
+        height: 65vh;
         margin: 10px;
         background-image: linear-gradient(to left, $color-5, rgb(143, 130, 238));
         box-sizing: 1px;
         border: none;
         border-radius: 15px;
         -webkit-box-shadow: 0px 5px 10px 8px rgba(143, 103, 198, 0.66); -moz-b
-        
         .card-body {
             text-align: center;
             h3 {
                 margin: 10px 0;
             }
             p {
-                
+                color: black;
             }
             button {
+                width: 50%;
                 a {
-                    
+                    color: white;
                     text-decoration: none;
                 }
             }

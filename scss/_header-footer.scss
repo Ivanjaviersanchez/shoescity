@@ -69,6 +69,7 @@
             /* background-color: $color-3; */ 
             button{
                 background-color: $color-3;
+
             }
             div {
                 ul {
@@ -83,11 +84,12 @@
                     font-weight: 400;
                     font-style: normal;
                     li {
-                        @include tamanio(100%,5vh);
+                        @include tamanio(100%,6vh);
                         background-color: $color-3;
-                        margin: 0.5vh;
+                        margin-left: 0.5vh;
+                        margin-right: 0.5vh;
                         overflow: hidden;
-                        margin-top: 1vh;   
+                          
                         a {
                             display: block;
                             text-align: center;

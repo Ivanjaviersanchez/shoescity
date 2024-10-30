@@ -31,7 +31,7 @@
     list-style-type: none;
     align-items: center;
     div {
-        @include tamanio(50%,auto);
+        @include tamanio(100%,auto);
         margin: 5px;
         a {
             color: $color-3;

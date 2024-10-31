@@ -69,12 +69,13 @@ img {
 
 /* ESTILOS DEL CONTENDOR */
 .container-fluid {
-  padding: 0;
+  padding: 1vh;
   flex-grow: 1; /*el contenedor ocupe todo el espacio disponible */
 }
 
 .row {
   flex: 1;
+  margin: 0;
 }
 
 .margin-contenido {
@@ -235,6 +236,7 @@ img {
   align-items: center;
   overflow: hidden;
   padding: 2vh;
+  padding-bottom: 3vh;
 }
 .carousel div img {
   width: 70%;
@@ -253,6 +255,7 @@ img {
   text-align: center;
   font-size: 3vh;
   padding-top: 2vh;
+  padding-bottom: 5vh;
   list-style-type: none;
   align-items: center;
 }
@@ -339,6 +342,7 @@ img {
   overflow: hidden;
   text-align: left;
   padding-left: 3vh;
+  padding-bottom: 5vh;
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
@@ -424,7 +428,7 @@ img {
 .contenedor-articulos-coleccion {
   width: 100%;
   height: auto;
-  margin: 2vh;
+  margin: 0;
   padding: 3vh;
   display: flex;
   flex-direction: row;

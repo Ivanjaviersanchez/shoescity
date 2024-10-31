@@ -58,12 +58,13 @@ img {
 
 /* ESTILOS DEL CONTENDOR */
 .container-fluid {
-    padding: 0;
+    padding: 1vh;
     flex-grow: 1; /*el contenedor ocupe todo el espacio disponible */   
 }
 
 .row {
     flex: 1; // Permite que las filas ocupen el espacio restante 
+    margin: 0;
 }
 .margin-contenido{
     margin-top: 22vh;

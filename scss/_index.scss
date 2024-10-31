@@ -10,6 +10,7 @@
     align-items: center;
     overflow: hidden;
     padding: 2vh;
+    padding-bottom: 3vh;
     div {
         img {
             @include tamanio(70%,auto);
@@ -28,6 +29,7 @@
     text-align: center;
     font-size: 3vh;
     padding-top: 2vh;
+    padding-bottom: 5vh;
     list-style-type: none;
     align-items: center;
     div {
@@ -110,6 +112,7 @@
     overflow: hidden;
     text-align: left;
     padding-left: 3vh;
+    padding-bottom: 5vh;
     margin-top: 5vh;
     margin-bottom: 5vh;
     h2 {

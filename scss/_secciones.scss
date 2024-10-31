@@ -60,7 +60,7 @@
 }
 .contenedor-articulos-coleccion {
     @include tamanio(100%,auto);
-    margin: 2vh;
+    margin: 0;
     padding: 3vh;
     display: flex;
     flex-direction: row;
